@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+	"name": "NBA GameTime",
+	"description": "Keep up with the playoffs",
+	"version": "1.0",
+
+	"permissions": [],
+	"browser_action": {
+		"default_icon": ""
+	}
+}
