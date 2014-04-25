@@ -11,7 +11,7 @@
 	"content_scripts": [
 		{
 			"matches": ["http://www.nbaplayoffsbracket.com/*", "http://nbaplayoffsbracket.com/*"],
-			"js": ["playoffs.js"/*insert js files and or jquery*/],
+			"js": ["jquery-2.1.0.min.js", "playoffs.js"],
 			"run_at": "document_end",
 			"all_frames": true
 		}
