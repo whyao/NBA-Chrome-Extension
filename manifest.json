@@ -1,11 +1,23 @@
 {
 	"manifest_version": 2,
-	"name": "NBA GameTime",
+	"name": "NBA Playoffs",
 	"description": "Keep up with the playoffs",
 	"version": "1.0",
 
-	"permissions": [],
+	"permissions": [
+		"https://www.nbaplayoffsbracket.com/*"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["http://www.nbaplayoffsbracket.com/*", "http://nbaplayoffsbracket.com/*"],
+			"js": ["playoffs.js"/*insert js files and or jquery*/],
+			"run_at": "document_end",
+			"all_frames": true
+		}
+	],
+
 	"browser_action": {
-		"default_icon": ""
+		"default_icon": "icon.png"
 	}
 }
