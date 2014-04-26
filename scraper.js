@@ -1,7 +1,8 @@
-function getTeamImages()
+function getBracket()
 {
-	var west = $("div.side-west").html();
-	console.log(west);
+	return $("#playoffbracket").html();
 }
 
-getTeamImages();
+var bracket = getBracket();
+//console.log( bracket );
+$("body").append(bracket);
