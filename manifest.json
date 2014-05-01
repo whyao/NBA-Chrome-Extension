@@ -1,24 +1,32 @@
 {
 	"manifest_version": 2,
-	"name": "NBA Playoffs",
-	"description": "Keep up with the playoffs",
+	"name": "NBA Playoff Bracket",
+	"description": "Quick way to keep up with the playoffs!",
 	"version": "1.0",
 
 	"permissions": [
-		"https://www.nbaplayoffsbracket.com/*"
+		"https://www.nbaplayoffsbracket.com/*",
+		"http://*/",
+		"storage"
 	],
 
 	"content_scripts": [
 		{
 			"matches": ["http://www.nbaplayoffsbracket.com/*", "http://nbaplayoffsbracket.com/*"],
-			"js": ["jquery-2.1.0.min.js", "playoffs.js", "scraper.js"],
+			"js": ["jquery-2.1.0.min.js", "scraper.js"],
 			"run_at": "document_end",
 			"all_frames": true
 		}
 	],
 
+	"icons": { 
+		"16": "popup.png",
+        "48": "manage.png",
+       	"128": "store.png" 
+    },
+
 	"browser_action": {
-		"default_icon": "icon.png",
+		"default_icon": "popup.png",
 		"default_popup": "home/playoffs.html"
 	},
 
