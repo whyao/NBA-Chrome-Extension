@@ -1,4 +1,4 @@
-var url = "http://www.nbaplayoffsbracket.com/2014/index.php";
+var url = "http://www.nbaplayoffsbracket.com/";
 
 function getBracket(results)
 {
