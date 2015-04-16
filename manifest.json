@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "NBA Playoff Bracket",
 	"description": "Quick way to keep up with the playoffs!",
-	"version": "1.1",
+	"version": "1.1.1",
 
 	"permissions": [
 		"https://www.nbaplayoffsbracket.com/*",

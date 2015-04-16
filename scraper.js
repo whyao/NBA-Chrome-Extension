@@ -23,6 +23,8 @@ function getPage()
 	$.get( url, function(results){
 		var bracket = getBracket( results );
 		$("div.bracket").append( bracket );
+		$(".outside").remove();
+
 		changeImgTags();
 	});
 }
